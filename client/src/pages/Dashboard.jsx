@@ -71,10 +71,6 @@ function Dashboard() {
   }
 
   const initial = user?.name ? user.name.charAt(0).toUpperCase() : "?";
-  const joinedDate = new Date().toLocaleDateString("en-US", {
-    month: "short",
-    year: "numeric",
-  });
 
   return (
     <div className="dashboard-page">
@@ -88,18 +84,6 @@ function Dashboard() {
         <h1 className="dashboard-name">{user?.name}</h1>
         <p className="dashboard-email">{user?.email}</p>
 
-        <div className="dashboard-divider" />
-
-        <div className="dashboard-info">
-          <div className="info-pill">
-            <p className="info-pill-label">Member since</p>
-            <p className="info-pill-value">{joinedDate}</p>
-          </div>
-          <div className="info-pill">
-            <p className="info-pill-label">Status</p>
-            <p className="info-pill-value" style={{ color: "var(--success)" }}>Active</p>
-          </div>
-        </div>
 
         <button
           id="logout-button"
