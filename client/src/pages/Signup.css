@@ -1,0 +1,28 @@
+
+.password-strength {
+  display: flex;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.strength-segment {
+  flex: 1;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--border);
+  transition: background 0.3s var(--ease);
+}
+
+.strength-segment.active-weak   { background: #ef4444; }
+.strength-segment.active-fair   { background: #f59e0b; }
+.strength-segment.active-strong { background: var(--success); }
+
+.strength-label {
+  font-size: 11px;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.strength-label.weak   { color: #ef4444; }
+.strength-label.fair   { color: #f59e0b; }
+.strength-label.strong { color: var(--success); }
