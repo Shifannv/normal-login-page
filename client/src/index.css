@@ -14,7 +14,7 @@
   --surface: #ffffff;
   --surface-alt: #f0f0f5;
   --border: rgba(0, 0, 0, 0.08);
-  --border-focus: #4f46e5;
+  --border-focus: #0e0d17;
 
   /* Text */
   --text-primary: #111118;
@@ -22,8 +22,8 @@
   --text-muted: #9898a8;
 
   /* Brand */
-  --accent: #4f46e5;
-  --accent-hover: #4338ca;
+  --accent: #000000;
+  --accent-hover: #090810;
   --accent-light: rgba(79, 70, 229, 0.08);
 
   /* Status */
